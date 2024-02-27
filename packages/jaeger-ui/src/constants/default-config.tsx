@@ -29,45 +29,14 @@ const defaultConfig: Config = {
   },
   menu: [
     {
-      label: 'About Jaeger',
+      label: 'Menu',
       items: [
         {
-          label: 'Website / Docs',
-          url: 'https://www.jaegertracing.io/',
-        },
-        {
-          label: 'Blog',
-          url: 'https://medium.com/jaegertracing/',
-        },
-        {
-          label: 'Twitter',
-          url: 'https://twitter.com/JaegerTracing',
-        },
-        {
-          label: 'Discussions / Q&A',
-          url: 'https://github.com/orgs/jaegertracing/discussions',
-        },
-        {
-          label: 'Online Chat',
-          url: 'https://cloud-native.slack.com/archives/CGG7NFUJ3',
-        },
-        {
-          label: 'GitHub',
-          url: 'https://github.com/jaegertracing/',
-        },
-        {
-          label: `Jaeger ${getVersion().gitVersion}`,
-        },
-        {
-          label: `Commit ${getVersion().gitCommit.substring(0, 7)}`,
-        },
-        {
-          label: `Build ${getVersion().buildDate}`,
-        },
-        {
-          label: `Jaeger UI v${version}`,
-        },
-      ],
+          label: 'monitor',
+          url: 'https://profiler.win-victor.com/monitor',
+          anchorTarget: '_self',
+        }
+      ]
     },
   ],
   search: {

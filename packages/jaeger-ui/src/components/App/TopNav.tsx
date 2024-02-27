@@ -42,20 +42,8 @@ const NAV_LINKS = [
     matches: searchUrl.matches,
     text: 'Search',
   },
-  {
-    to: (props: Props) => diffUrl.getUrl(props.traceDiff),
-    matches: diffUrl.matches,
-    text: 'Compare',
-  },
 ];
 
-if (getConfigValue('dependencies.menuEnabled')) {
-  NAV_LINKS.push({
-    to: dependencyGraph.getUrl(),
-    matches: dependencyGraph.matches,
-    text: 'System Architecture',
-  });
-}
 
 if (getConfigValue('deepDependencies.menuEnabled')) {
   NAV_LINKS.push({
@@ -73,13 +61,6 @@ if (getConfigValue('qualityMetrics.menuEnabled')) {
   });
 }
 
-if (getConfigValue('monitor.menuEnabled')) {
-  NAV_LINKS.push({
-    to: monitorATMUrl.getUrl(),
-    matches: monitorATMUrl.matches,
-    text: 'Monitor',
-  });
-}
 
 function getItem(item: ConfigMenuItem) {
   const { label, anchorTarget, url } = item;
